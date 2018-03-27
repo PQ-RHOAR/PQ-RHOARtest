@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>test</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p><img src="owncloud.jpg" style="width:1.875in;height:0.92569in" /></p>
+<h1 id="owncloud-10.0.7-quickstart-guide-installing-and-connecting"><span style="color:green"><strong><span class="underline">ownCloud 10.0.7 Quickstart Guide – Installing and Connecting</span></strong></span></h1>
+<p>This Quickstart Guide provides you with setup and use instructions for ownCloud 10.0.7, providing links to other Web pages for more details.</p>
+<h2 id="what-is-owncloud"><span class="underline">What is ownCloud?</span></h2>
+<p>ownCloud is a free, open-source, suite of client–server software for creating and using file hosting services. The ownCloud server runs on most popular Linux distributions. You can connect to the server using the desktop client running on Windows, MacOS or Linux, or the ownCloud mobile app running on iOS or Android devices.</p>
+<p>ownCloud is the last cloud collaboration/file sharing/file synching/data privacy platform you will ever need.</p>
+<h4 id="whats-new-in-owncloud-10.0.7."><a href="https://doc.owncloud.org/server/latest/admin_manual/whats_new_admin.html"><span class="underline">What’s New in ownCloud 10.0.7.</span></a></h4>
+<h2 id="overview"><span class="underline">Overview</span></h2>
+<p>This Quickstart Guide provides information and links for several of the most commonly used tasks when you are starting with ownCloud:</p>
+<ul>
+<li><p>Install and configure the ownCloud server</p></li>
+<li><p>Configure the ownCloud server IP address and port</p></li>
+<li><p>Add a user account</p></li>
+<li><p>Connect to the ownCloud server from a desktop or mobile client</p></li>
+</ul>
+<hr />
+<hr />
+<h3 id="task-install-and-configure-the-owncloud-server"><span style="color:green"><strong>Task:</strong> Install and configure the ownCloud server</span></h3>
+<p><strong>Role:</strong> Administrator</p>
+<ol type="1">
+<li><p>Open the <a href="https://owncloud.org/download/"><span class="underline">download page</span></a>.</p></li>
+<li><p>Choose 1 of the following download options:</p>
+<ol type="a">
+<li><p>Tarball</p>
+<ul>
+<li><p>Most common option</p></li>
+<li><p>Best for production environments</p></li>
+<li><p>Intended for experienced administrators</p></li>
+<li><p>The most customizable installation method</p></li>
+</ul></li>
+<li><p>Docker image</p>
+<ul>
+<li><p>ownCloud maintains an <em>ownCloud Server Docker Image</em></p></li>
+<li><p>Intended for experienced administrators</p></li>
+<li><p>For a <strong>docker-compose.yml</strong> example, go to <a href="https://github.com/owncloud-docker/server">github</a></p></li>
+</ul></li>
+<li><p>Appliance</p>
+<ul>
+<li><p>Easiest way to get ownCloud up and running - built on Ubuntu Linux and is fully set up and configured with a secure connection and the ownCloud Proxy app.</p></li>
+<li><p>Best approach for non-technical users</p></li>
+<li><p>Image formats provided for several hosting environments: ESX, VMware, VirtualBox, KVM</p></li>
+</ul></li>
+<li><p>Linux distribution packages: ready-to-deploy packages for popular Linux distributions such as Debian, Ubuntu, Fedora, RedHat Enterprise Linux, CentOS and openSUSE. <img src="LinuxDistros.jpg" style="width:6.5in;height:1.25in" /></p></li>
+<li><p>Web Installer: Installs ownCloud on a web space. It checks the dependencies, downloads ownCloud from the official server, unpacks it with the right permissions and the right user account. Finally, you will be redirected to the ownCloud installer.</p></li>
+</ol></li>
+<li><p>Follow the installation instructions in the <a href="https://doc.owncloud.org/server/latest/admin_manual/installation/"><span class="underline">Administration Guide</span></a>.</p></li>
+</ol>
+<hr />
+<h3 id="task-configure-the-owncloud-server-ip-address-and-port"><span style="color:green"><strong>Task:</strong> Configure the ownCloud server IP address and port</span></h3>
+<p><strong>Role:</strong> Administrator</p>
+<p>The ownCloud server is serviced by the webserver you chose. You must edit the configuration for the webserver to change IP address or port. Follow <a href="https://central.owncloud.org/t/how-to-change-the-port-owncloud-is-using/834"><span class="underline">these steps</span></a> for Apache and Nginx.</p>
+<hr />
+<h3 id="task-add-a-user-account"><span style="color:green"><strong>Task:</strong> Add a user account</span></h3>
+<p><strong>Role:</strong> Administrator</p>
+<p>To create a new user from the UI, follow <a href="https://doc.owncloud.org/server/latest/admin_manual/configuration/user/user_configuration.html#creating-a-new-user"><span class="underline">these steps</span></a>.</p>
+<p>To create a new user from the command line (with the <strong>occ</strong> command), follow <a href="https://doc.owncloud.org/server/10.0/admin_manual/configuration/server/occ_command.html#user-commands"><span class="underline">these steps</span></a>.</p>
+<hr />
+<h3 id="task-connect-to-the-owncloud-server-from-a-desktop-or-mobile-client"><span style="color:green"><strong>Task:</strong> Connect to the ownCloud server from a desktop or mobile client</span></h3>
+<p><strong>Role:</strong> User</p>
+<p>To connect to the ownCloud server, use a Web browser or your mobile device.</p>
+<p>When you install the ownCloud app and open it you are prompted for your ownCloud server URL and login.</p>
+<h4 id="using-the-desktop-client"><span class="underline">Using the desktop client</span>:</h4>
+<p>Use any Web browser, such as, Firefox 14+, Chrome 18+, Safari 5+, or IE11+ (except Compatibility Mode).</p>
+<p>Point your Web browser to your ownCloud server:</p>
+<ul>
+<li><p>URL: https://<em>example.host.com</em>/owncloud:<em>8080</em></p></li>
+<li><p>Log in with your user name and password</p></li>
+</ul>
+<h4 id="using-the-android-app"><span class="underline">Using the Android app</span>:</h4>
+<ul>
+<li><p>Download the ownCloud app.</p></li>
+<li><p>Run your ownCloud Android app, it opens to a configuration screen.</p></li>
+<li><p>Enter your server URL, login name, password, and click the <strong>Connect</strong> button.</p></li>
+</ul>
+<h4 id="using-the-ios-app"><span class="underline">Using the iOS app</span>:</h4>
+<ul>
+<li><p>Download the ownCloud app.</p></li>
+<li><p>Open any Web browser, such as Safari, and point it to your ownCloud server.</p></li>
+<li><p>Log in and look on your Personal page for a link to the ownCloud app on iTunes.</p></li>
+</ul>
+</body>
+</html>
